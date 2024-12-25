@@ -40,7 +40,7 @@ function App() {
             toggleSidebar={toggleSidebar}
           />
           <Routes>
-            <Route path="/" element={<Home cart={cart} />} />
+            <Route path="/E-commerce" element={<Home cart={cart} />} />
             <Route path="/userprofile" element={<UserProfile />} />
             <Route path="/checkout" element={<CheckoutPage />} />
             <Route path="/orderhistory" element={<OrderHistoryPage />} />
