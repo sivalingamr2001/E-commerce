@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Shopping from "../../assets/images/shopping.png";
-import { brand } from "../../constants";
+// import { brand } from "../../constants";
 import Loader from "../../utils/Loader/Loader";
 import { Link } from "react-router-dom";
 import { HeaderAnimations } from "../../utils/Gsap/HeaderAnimations";
@@ -28,49 +28,49 @@ const ShopButton = ({ link }) => (
   </Link>
 );
 
-/* Brands Component */
-const Brands = ({ brandList }) => {
-  useEffect(() => {
-    if (brandList?.length > 0) {
-      gsap.fromTo(
-        ".header__brand-image",
-        { opacity: 0, y: 500 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          stagger: 0.2,
-          scrollTrigger: {
-            trigger: ".header__brands",
-            start: "top 85%",
-            end: "top 30%",
-            scrub: true,
-          },
-        }
-      );
-    }
-  }, [brandList]);
+// /* Brands Component */
+// const Brands = ({ brandList }) => {
+//   useEffect(() => {
+//     if (brandList?.length > 0) {
+//       gsap.fromTo(
+//         ".header__brand-image",
+//         { opacity: 0, y: 500 },
+//         {
+//           opacity: 1,
+//           y: 0,
+//           duration: 1,
+//           stagger: 0.2,
+//           scrollTrigger: {
+//             trigger: ".header__brands",
+//             start: "top 85%",
+//             end: "top 30%",
+//             scrub: true,
+//           },
+//         }
+//       );
+//     }
+//   }, [brandList]);
 
-  return (
-    <div className="header__brands">
-      <h1 className="header__brands-title">Top Brands</h1>
-      <div className="header__brands-images">
-        {brandList?.length > 0 ? (
-          brandList.map((brand, index) => (
-            <img
-              key={index}
-              src={brand}
-              alt={`Brand ${index + 1}`}
-              className="header__brand-image"
-            />
-          ))
-        ) : (
-          <p>No brands available</p>
-        )}
-      </div>
-    </div>
-  );
-};
+//   return (
+//     <div className="header__brands">
+//       <h1 className="header__brands-title">Top Brands</h1>
+//       <div className="header__brands-images">
+//         {brandList?.length > 0 ? (
+//           brandList.map((brand, index) => (
+//             <img
+//               key={index}
+//               src={brand}
+//               alt={`Brand ${index + 1}`}
+//               className="header__brand-image"
+//             />
+//           ))
+//         ) : (
+//           <p>No brands available</p>
+//         )}
+//       </div>
+//     </div>
+//   );
+// };
 
 /* Main Header Component */
 const Header = () => {
@@ -105,9 +105,9 @@ const Header = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="header__bottom">
+      {/* <div className="header__bottom">
         <Brands brandList={Object.values(brand)} />
-      </div>
+      </div> */}
     </header>
   );
 };
