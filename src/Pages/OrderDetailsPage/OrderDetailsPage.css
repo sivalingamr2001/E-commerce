@@ -1,0 +1,77 @@
+/* General Styles for the Order Details Page */
+.order-detail-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  width: 100%;
+  height: 90vh;
+}
+
+.order-detail-page-container {
+  padding: 20px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.order-detail-page__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.order-detail-page__info,
+.order-detail-page__shipping,
+.order-detail-page__items {
+  margin-bottom: 20px;
+}
+
+.order-detail-page__info-item,
+.order-detail-page__shipping-item,
+.order-detail-page__item-name,
+.order-detail-page__item-price,
+.order-detail-page__item-quantity {
+  margin: 5px 0;
+}
+
+.order-detail-page__item-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.order-detail-page__items {
+  display: flex;flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+}
+
+.order-detail-page__item {
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3em;
+}
+
+.order-detail-page__item-image {
+  max-width: 50px;
+  margin-left: 15px;
+}
+
+.order-detail-page__section-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Loading and Error States */
+.order-detail-page__loading,
+.order-detail-page__error-message {
+  color: red;
+  font-weight: bold;
+}

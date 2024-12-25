@@ -1,0 +1,98 @@
+.loader-card {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4.5em;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  color: rgb(18, 17, 31);
+}
+
+.loader-anime {
+  font-weight: 500;
+  font-size: 25px;
+
+  display: flex;
+  box-sizing: content-box;
+
+  height: 40px;
+}
+
+.words {
+  margin-top: 0.2em;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+}
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  color: var(--accent-color);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  animation: spin 10s infinite;
+  padding: 30px;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(0%);
+  }
+  12.5% {
+    transform: translateY(-100%);
+  }
+  25% {
+    transform: translateY(-200%);
+  }
+  37.5% {
+    transform: translateY(-300%);
+  }
+  50% {
+    transform: translateY(-400%);
+  }
+  62.5% {
+    transform: translateY(-500%);
+  }
+  75% {
+    transform: translateY(-600%);
+  }
+  87.5% {
+    transform: translateY(-700%);
+  }
+  100% {
+    transform: translateY(-800%);
+  }
+}
+
+@media (max-width: 768px) {
+  .loader-card {
+    margin: 0 1em; /* Reduce horizontal margin for smaller screens */
+    border-width: 0.5px; /* Thin border for smaller screens */
+  }
+
+  .loader-anime {
+    font-size: 18px; /* Adjust font size for readability */
+    height: 30px; /* Adjust height */
+  }
+
+  .words {
+    padding-top: 20px; /* Reduce padding */
+    margin-top: 0.3em; /* Adjust margin */
+  }
+
+  .word {
+    font-size: 0.8rem; /* Smaller font size for words */
+    padding: 20px; /* Reduce padding */
+  }
+}

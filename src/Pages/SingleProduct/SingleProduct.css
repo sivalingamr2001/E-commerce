@@ -1,0 +1,230 @@
+.single-product {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-product__container {
+  padding: 2rem 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--primary-color);
+  border: 1px solid #323232;
+  box-shadow: 2px 2px #323232;
+  max-width: 1200px;
+  width: 100%;
+  border-radius: 8px;
+}
+.like-btn{
+ margin-left: 1em;
+}
+
+.single-product__image img {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px;
+  padding: 20px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.single-product__details {
+  max-width: 600px;
+  padding: 0 2rem;
+}
+
+.single-product__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.single-product__description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.single-product__price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-crimson);
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.single-product__star {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.single-product__rating {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.single-product__rating svg {
+  color: #ffcc00;
+  fill: #ffcc00;
+  margin-right: 8px;
+  filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.3));
+}
+
+.single-product__rating span {
+  font-weight: bold;
+  color: hsla(0, 0%, 20%, 0.3);
+  padding-left: 6px;
+}
+
+.single-product__rating:last-child {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #666;
+}
+
+.single-product__category {
+  padding: 20px 0;
+}
+
+.single-product__category-title span {
+  font-weight: bold;
+  color: #333;
+  padding-left: 6px;
+}
+
+/* Button */
+.products__actions {
+  display: flex;
+
+  gap: 20px;
+}
+
+.CartBtn {
+  width: 160px;
+  height: 40px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  position: relative;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #323232;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+  transition-duration: 0.5s;
+}
+.CartBtn:hover {
+  background-color: var(--color-heading);
+}
+
+.IconContainer {
+  position: absolute;
+  left: -50px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: 0.5s;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  z-index: 1;
+  transition-duration: 0.5s;
+  font-size: 1.04em;
+  font-weight: 600;
+}
+
+.CartBtn:hover .IconContainer {
+  transform: translateX(58px);
+  border-radius: 40px;
+  transition-duration: 0.5s;
+}
+
+.CartBtn:hover .text {
+  transform: translate(10px, 0px);
+  transition-duration: 0.5s;
+}
+
+.CartBtn:active {
+  transform: scale(0.95);
+  transition-duration: 0.5s;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .single-product {
+    height: auto;
+    margin: 1em 0 1em 0;
+  }
+  .single-product__container {
+    margin: 0 1em;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    align-items: center;
+  }
+
+  .single-product__image img {
+    max-width: 100%;
+    margin: 0px;
+    padding: 30px;
+    margin-top: 1em;
+  }
+
+  .single-product__details {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .single-product__title {
+    font-size: 1.2rem;
+  }
+
+  .single-product__description {
+    font-size: 0.9rem;
+  }
+
+  .single-product__price {
+    font-size: 1.2rem;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .single-product__rating {
+    font-size: 1rem;
+  }
+
+  .single-product__category {
+    padding: 10px 0;
+  }
+}

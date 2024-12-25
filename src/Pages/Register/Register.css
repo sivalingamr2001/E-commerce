@@ -1,0 +1,94 @@
+/* Register Form Styles */
+.register {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-light);
+  text-align: center;
+}
+
+.register h2 {
+  margin-bottom: 1.5rem;
+  font-size: var(--font-size-lg);
+  color: var(--heading-color);
+  font-family: var(--font-2);
+}
+
+.register .form-group {
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.register label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: var(--font-size-sm);
+  color: var(--heading-color);
+}
+
+.register input,
+.register select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: var(--font-size-base);
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--border-radius);
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.register input:focus,
+.register select:focus {
+  border-color: var(--color-primary);
+}
+
+.register button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: var(--font-size-base);
+  color: #fff;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.register button:hover {
+  background-color: var(--color-accent);
+}
+
+.register p {
+  margin-top: 1rem;
+  font-size: var(--font-size-sm);
+}
+
+.register span {
+  color: var(--link-color);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.register span:hover {
+  color: var(--link-hover-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register {
+    margin: 2rem auto;
+    padding: 1.5rem;
+  }
+
+  .register h2 {
+    font-size: 1.5rem;
+  }
+
+  .register input,
+  .register select,
+  .register button {
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,232 @@
+.app__sidebar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: -150%;
+  height: 100vh;
+  z-index: 2000;
+  overflow-y: scroll;
+  background-color: inherit;
+  backdrop-filter: saturate(10%) blur(5px);
+  transition: left 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.app__sidebar.visible {
+  left: 0;
+}
+
+.sidebar {
+  z-index: 200;
+  position: relative;
+  top: 0;
+  width: 25%;
+  padding: 0 10px;
+  background-color: var(--background);
+  box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.app__sidebar-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-title h1 {
+  text-align: center;
+  color: var(--color-text);
+}
+
+.app__sidebar-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  color: var(--color-text);
+}
+
+.app__sidebar-toggle:hover {
+  color: var(--color-accent);
+  cursor: pointer;
+}
+
+/* Login section */
+.login-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.sidebar__user-links h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  color: var(--color-crimson);
+  font-family: var(--font-family-5);
+  font-weight: bolder;
+}
+
+.sidebar__user-links h3 span {
+  color: var(--gradient-blue);
+  font-size: 4rem;
+  font-family: var(--font-family-accent);
+  text-shadow: 0 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.user-links-table {
+  width: 100%;
+}
+
+.user-links-table .link-text {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.user-links-table .link-icon {
+  border: 1px solid var(--color-border);
+  width: 50px;
+  text-align: center;
+}
+
+.user-links-table .user-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 16px;
+  width: 100%;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease;
+}
+
+.user-links-table td {
+  padding: 10px;
+  vertical-align: middle;
+}
+.user-links-table td:hover {
+  background: var(--gradient-gold);
+}
+
+/* Divider */
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 15px 0;
+}
+
+/* Quick links section */
+.sidebar__quicklinks h3{
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+  font-family: var(--font-family-josh);
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.sidebar__quicklinks ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar__quicklinks li {
+  margin: 10px 0;
+}
+
+.sidebar__quicklinks a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: var(--font-size-medium);
+  transition: color 0.3s ease, border-bottom 0.5s ease-in-out;
+}
+
+.sidebar__quicklinks a:hover {
+  color: var(--color-accent);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Category Section */
+.category-section h3 {
+   text-align: center;
+  font-family: var(--font-family-josh);
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-item {
+  margin-bottom: 15px;
+}
+
+.category-button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: left;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.category-button:hover {
+  background-color: var(--color-hover);
+}
+
+.chevrondown-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.chevrondown-rotate {
+  transform: rotate(180deg);
+}
+
+.subcategory-list {
+  margin-top: 10px;
+  padding-left: 5em;
+}
+
+.subcategory-item {
+  margin-bottom: 8px;
+}
+
+.subcategory-link {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.subcategory-link:hover {
+  color: var(--color-accent);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .sidebar-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .user-links li {
+    padding: 5px 10px;
+  }
+}

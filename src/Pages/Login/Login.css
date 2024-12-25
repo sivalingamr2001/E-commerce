@@ -1,0 +1,91 @@
+/* Login Form Styles */
+.login {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-light);
+  text-align: center;
+}
+
+.login h2 {
+  margin-bottom: 1.5rem;
+  font-size: var(--font-size-lg);
+  color: var(--heading-color);
+  font-family: var(--font-2);
+}
+
+.login .form-group {
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.login label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: var(--font-size-sm);
+  color: var(--heading-color);
+}
+
+.login input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: var(--font-size-base);
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--border-radius);
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.login input:focus {
+  border-color: var(--color-primary);
+}
+
+.login button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: var(--font-size-base);
+  color: #fff;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login button:hover {
+  background-color: var(--color-accent);
+}
+
+.login p {
+  margin-top: 1rem;
+  font-size: var(--font-size-sm);
+}
+
+.login span {
+  color: var(--link-color);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.login span:hover {
+  color: var(--link-hover-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login {
+    margin: 2rem auto;
+    padding: 1.5rem;
+  }
+
+  .login h2 {
+    font-size: 1.5rem;
+  }
+
+  .login input,
+  .login button {
+    padding: 0.5rem;
+  }
+}

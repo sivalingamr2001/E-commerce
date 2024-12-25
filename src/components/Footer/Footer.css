@@ -1,0 +1,153 @@
+/* Footer styling */
+.footer {
+  background-color: #040c18;
+  color: #f1f1f1;
+  padding: 2rem 0;
+}
+
+.footer__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 20px;
+}
+
+.footer__left {
+  max-width: 40%;
+}
+
+.footer__logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.footer__description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.footer__right {
+  max-width: 40%;
+}
+
+.footer__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer__links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__link {
+  display: block;
+  color: #f1f1f1;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: var(--color-primary);
+}
+
+.footer__bottom {
+  border-top: 1px solid #666;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-top: 0.5rem;
+}
+
+/* Contact Info Section */
+.footer-contact {
+  margin-top: 2rem;
+}
+
+.footer-contact h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-contact li {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+}
+
+/* Social Media Section */
+.footer-social {
+  margin-top: 2rem;
+}
+
+.footer-social h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--color-primary);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__left,
+  .footer__right {
+    max-width: 100%;
+  }
+
+  .footer__links {
+    margin-top: 1rem;
+  }
+
+  .footer-contact,
+  .footer-social {
+    text-align: center;
+  }
+
+  .footer-contact ul,
+  .footer-social ul {
+    margin-top: 1rem;
+  }
+}

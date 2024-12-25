@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Allison&family=Alumni+Sans+Pinstripe:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Revalia&display=swap");
+
+:root {
+  /* Font Families */
+  --font-family: "Poppins", sans-serif;
+  --font-family-2: "Allison", cursive;
+  --font-family-3: "Josefin Sans", cursive;
+  --font-family-4: "Revalia", serif;
+  --font-family-5: "Alumni Sans Pinstripe", serif;
+
+  /* Line Height */
+  --line-height: 1.6;
+
+  --background: #eae7dc;
+  --color-text: #0b0c10;
+  --primary-color: #d8c3a5;
+  --secondary-color: #e98074;
+  --border-color: #8e8d8a;
+
+  --color-white: #f6f6f6;
+  --color-heading: #e85a4f;
+  --color-green: #afd275;
+  --color-yellow: #fade26;
+  --color-pink: #f172a1;
+  --color-crimson: #e63946;
+  --color-darkgreen: #38b000;
+  --color-border: rgba(0, 0, 0, 0.3);
+
+  /* Gradients */
+  --gradient-text: linear-gradient(90deg, #ff6f61 0%, #ff9a8b 100%);
+  --gradient-blue: linear-gradient(
+    to right,
+    #2193b0,
+    #6dd5ed
+  ); /* For banners */
+  --gradient-green: linear-gradient(
+    to right,
+    #56c5a1,
+    #3d5a80
+  ); /* For offers */
+}
